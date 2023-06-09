@@ -3,7 +3,6 @@ import pyttsx3
 from PIL import Image
 import os
 
-
 def generate_audio(text, rate, volume, voice_index):
     engine = pyttsx3.init()
     voices = engine.getProperty('voices')
