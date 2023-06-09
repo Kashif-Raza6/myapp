@@ -3,6 +3,7 @@ import pyttsx3
 from PIL import Image
 import os
 
+
 def generate_audio(text, rate, volume, voice_index):
     engine = pyttsx3.init()
     voices = engine.getProperty('voices')
@@ -51,7 +52,7 @@ st.sidebar.markdown("## Speech Settings")
 
 rate = st.sidebar.slider("Rate of Speech (words per minute)", min_value=50, max_value=200, value=170)
 volume = st.sidebar.slider("Volume (0-1)", min_value=0, max_value=1, value=1)
-voice_index = st.sidebar.selectbox("Select Voice", [0, 1])
+voice_index = st.sidebar.selectbox("Select Voice", [1, 0])
 
 # Get text input from user
 text = st.text_area("Enter the text you want to convert to speech:", height=200)
