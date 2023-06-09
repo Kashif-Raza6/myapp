@@ -16,7 +16,7 @@ def generate_audio(text, rate, volume, voice_index):
 
 def main():
     # Custom CSS styles
-    with st.beta_container():
+    with st.container():
         st.markdown(
             """
             <style>
