@@ -44,7 +44,7 @@ st.markdown("# Text to Speech App")
 st.markdown("Enter text and convert it to speech!")
 
 # Upload banner image
-image = Image.open('Images/Image1.png')
+image = Image.open('Apple VR.png')
 st.image(image, use_column_width=True)
 
 # Sidebar with sliders
